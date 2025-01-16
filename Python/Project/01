@@ -1,1 +1,82 @@
+# 메뉴와 가격 설정
+menu = ['americano', 'latte', 'mocha', 'yuza_tea', 'green_tea', 'choco_latte']
+price = [2000, 3000, 3000, 2500, 2500, 3000]
 
+class Kiosk:
+    def __init__(self):
+        self.menu = menu
+        self.price = price
+        self.order_menu = []    # 주문 메뉴 리스트
+        self.order_price = []   # 주문 가격 리스트
+        self.price_sum = 0      # 총 주문 금액
+
+    def menu_print(self):
+        for i in range(len(self.menu)):
+            print(i+1, self.menu[i], ' : ', self.price[i], '원')
+
+    def menu_select(self):
+        while True:
+            try:
+                n = int(input("음료의 번호를 입력하세요 (종료: 0) : "))
+                if n == 0:
+                    if not self.order_menu:  # 주문 내역이 없는 경우
+                        print("최소 1개 이상의 음료를 주문해주세요.")
+                        continue
+                    print("주문이 완료되었습니다.")
+                    break
+                
+                if 1 <= n <= len(self.menu):
+                    # 온도 선택
+                    t = 0
+                    while t != 1 and t != 2:
+                        t = int(input("HOT 음료는 1을, ICE 음료는 2를 입력하세요 : "))
+                        if t == 1:
+                            self.temp = "HOT"
+                        elif t == 2:
+                            self.temp = "ICE"
+                        else:
+                            print("1과 2 중 하나를 입력하세요.\n")
+                    
+                    # 주문 내역 추가
+                    self.order_menu.append(f"{self.temp} {self.menu[n-1]}")
+                    self.order_price.append(self.price[n-1])
+                    self.price_sum = sum(self.order_price)
+                    
+                    print(f'주문 음료 {self.temp} {self.menu[n-1]} : {self.price[n-1]}원')
+                    print(f'현재 합계: {self.price_sum}원')
+                else:
+                    print("없는 메뉴입니다. 다시 주문해 주세요.")
+            except ValueError:
+                print("올바른 숫자를 입력해 주세요.")
+
+    def pay(self):
+        p = 0
+        while p != 1 and p != 2:
+            p = int(input("현금은 1, 카드는 2를 입력하세요 : "))
+            if p == 1:
+                print("직원을 호출하겠습니다.")
+            elif p == 2:
+                print("IC칩 방향에 맞게 카드를 꽂아주세요.")
+            else:
+                print("1과 2 중 하나를 입력하세요.\n")
+
+    def table(self):
+        print('⟝' + '-' * 30 + '⟞')
+        for i in range(5):
+            print('|' + ' ' * 31 + '|')
+
+        for i in range(len(self.order_menu)):
+            print(self.order_menu[i], ' : ', self.order_price[i])
+
+        print('합계 금액 :', self.price_sum)
+
+        for i in range(5):
+            print('|' + ' ' * 31 + '|')
+        print('⟝' + '-' * 30 + '⟞')
+
+# 사용 예시
+# k = Kiosk()
+# k.menu_print()
+# k.menu_select()
+# k.table()
+# k.pay()
