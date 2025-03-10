@@ -7,11 +7,12 @@
 
 
 앱구조도
+![image](https://github.com/user-attachments/assets/8797b023-ab90-4d01-b2ba-2c1a7b1b7500)
 
-![image.jpeg](attachment:599cbe95-286f-4fb4-80ff-e1db73145822:image.jpeg)
 
 와이어프레임 
-![image.jpeg](attachment:01120214-1f07-4eec-a648-f3f9ec2abcad:image.jpeg)
+
+<img width="687" alt="스크린샷 2025-03-07 오후 3 39 11" src="https://github.com/user-attachments/assets/ec44b601-c3f9-4314-95af-311b3cf7fe75" />
 
 프로토 타이핑
 ![스크린샷 2025-03-07 오후 4.45.43.png](attachment:6e18845f-eca0-414a-ad32-1b5d0a8e3962:스크린샷_2025-03-07_오후_4.45.43.png)
