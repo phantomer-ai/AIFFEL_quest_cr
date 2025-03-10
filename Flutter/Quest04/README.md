@@ -1,3 +1,46 @@
+#도마뱀 관리어플 도마고치 역설계하기 
+앱 정보: 도마뱀 관리어플 
+앱 이름: 도마고치
+
+시장(마켓) : 점점 크레스티드 게코로 인해 1가구 1도마뱀을 실천중, 개나 고양이 보다 훨씬 관리나 사육난이도가 낮아 아이를 키우는 집에서 선호되고 있음. 
+타겟 : 크레스티드 게코 도마뱀을 키우는 브리더
+
+
+앱구조도
+
+![image.jpeg](attachment:599cbe95-286f-4fb4-80ff-e1db73145822:image.jpeg)
+
+와이어프레임 
+![image.jpeg](attachment:01120214-1f07-4eec-a648-f3f9ec2abcad:image.jpeg)
+
+프로토 타이핑
+![스크린샷 2025-03-07 오후 4.45.43.png](attachment:6e18845f-eca0-414a-ad32-1b5d0a8e3962:스크린샷_2025-03-07_오후_4.45.43.png)
+![스크린샷 2025-03-07 오후 4.51.01.png](attachment:c1f42dba-8f92-4bef-8c61-69ea3833238c:스크린샷_2025-03-07_오후_4.51.01.png)
+![스크린샷 2025-03-07 오후 5.12.34.png](attachment:b9043772-610b-4748-8fee-32ebf7cd3d30:스크린샷_2025-03-07_오후_5.12.34.png)
+![스크린샷 2025-03-07 오후 5.12.43.png](attachment:dbd2f5c1-1c7f-4f19-975e-fea979397472:스크린샷_2025-03-07_오후_5.12.43.png)
+![image](https://github.com/user-attachments/assets/f268fb48-3316-4c0e-997a-aa2c23582ff7)
+
+구현 페이지 
+![image](https://github.com/user-attachments/assets/10fd872c-58b1-42ac-a5e2-0b4fe8c3dffd)
+
+구현영상
+
+
+
+https://github.com/user-attachments/assets/a2f401ba-0451-4fdb-aca5-bc8d7407f7f4
+
+
+
+
+
+
+
+
+
+
+
+
+
 # AIFFEL Campus Online Code Peer Review Templete
 - 코더 : 코더의 이름을 작성하세요.
 - 리뷰어 : 리뷰어의 이름을 작성하세요.
